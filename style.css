@@ -1,0 +1,416 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #1c3d5a;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background-color: #F7F9FC;
+    padding: 20px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #1c3d5a;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #4A90E2;
+}
+
+/* WhatsApp Flutuante */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.whatsapp img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.whatsapp img:hover {
+    transform: scale(1.1);
+}
+
+img .dente:hover {
+    rotate: -15deg;
+}
+
+
+/* Hero */
+.hero {
+    background-color: #4a90e2;
+    color: white;
+    padding: 80px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-img img {
+    width: 500px;
+    max-width: 100%;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: white;
+    color: #4A90E2;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #b7c5d8;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Especialidades */
+.especialidades {
+    background-color: #F7F9FC;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.especialidades h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #4A90E2;
+    margin: 12px 0 8px 0;
+}
+
+.card p {
+    color: #7B8A99;
+}
+
+.especialidades .container .btn {
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+/* Sobre */
+.sobre {
+    background-color: white;
+    padding: 60px 20px;
+}
+
+.sobre-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.sobre-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sobre-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.sobre-text p {
+    color: #1c3d5a;
+}
+
+.sobre-img img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Nossa Equipe */
+.equipe {
+    background-color: #F7F9FC;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.equipe h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #1C3D5A;
+}
+
+.cards-equipe {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card-equipe {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.card-equipe:hover {
+    transform: translateY(-5px);
+}
+
+.card-equipe img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.card-equipe h3 {
+    color: #4A90E2;
+    margin-bottom: 8px;
+}
+
+.card-equipe p {
+    color: #7B8A99;
+    font-size: 0.95rem;
+}
+
+/* Mapa Localização */
+/*
+.mapa {
+    background-color: #F7F9FC;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.mapa h3 {
+    margin-bottom: 20px;
+    color: #1C3D5A;
+    font-size: 1.8rem;
+}
+
+.mapa iframe {
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+    */
+
+    /* Localização e Contato */
+.localizacao {
+    background-color: #F7F9FC;
+    padding: 60px 20px;
+}
+
+.localizacao-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.mapa {
+    flex: 1;
+    min-width: 300px;
+}
+
+.mapa iframe {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+.contato-info {
+    flex: 1;
+    min-width: 280px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.contato-info h3 {
+    color: #1C3D5A;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.contato-info p {
+    color: #1C3D5A;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.contato-info .btn {
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.contato-info .btn:hover {
+    background-color: #1C3D5A;
+}
+
+
+/* Footer */
+footer {
+    background-color: #1C3D5A;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #4A90E2;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-img img {
+        width: 300px;
+    }
+
+    .sobre-img img {
+        width: 300px;
+    }
+
+    .localizacao-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contato-info, .mapa {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul {
+        display: none;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+
+    .hero-img img {
+        width: 220px;
+    }
+
+    .sobre-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-img img {
+        width: 220px;
+    }
+}
